@@ -131,6 +131,15 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.game-wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transform: perspective(400px) rotate3d(1,0 , 0 , 90deg);
+}
+
 .block-questions{
     flex-basis:  70%;
 }
