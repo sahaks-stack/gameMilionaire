@@ -1,121 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hy">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ով է ուզում դառնալ Միլիոնատեր</title>
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href=" https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2 format('woff2')" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="game">
         <div class="container">
-                <button class="start-btn">Սկսել Խաղը</button>
-                <div class="rules-popup" id="rulesPopup">
-                    <div class="rules-content">
-                            "Ով է ուզում դառնալ Միլիոնատեր" <br><br>
-                            ✔️ Խաղը բաղկացած է 15 հարցից։<br>
-                            ✔️ Յուրաքանչյուր ճիշտ պատասխանի դեպքում խաղացողն անցնում է հաջորդ հարցին։<br>
-                            ✔️ Խաղում կա 2 անձեռնմխելի գումար 5-րդ և 10-րդ հարցերից հետո։<br>
-                            ✔️ Խաղացողը կարող է օգտվել՝ <em>«50/50»</em>, <em>«Դահլիճի օգնություն»</em>, <em>«Զանգ ընկերոջը»</em>, <em>«Հարցը փոխելու»</em> և <em>«ԱԲ-ի օգնություն»</em> հնարավություններից։<br>
-                            ✔️ Սխալ պատասխանի դեպքում խաղացողը ստանում է վերջին շահած անձեռնմխելի գումարը։<br>
-                            ✔️ Խաղացողը կարող է ցանկացած պահի դադարեցնել խաղը  և վերցնել շահած գումարը։<br><br>
-                            ՀԱՋՈՂՈՒԹՅՈՒՆ ՔԵԶ՝ ԱՊԱԳԱ ՄԻԼԻՈՆԱՏԵՐ։ 💰 
-                    </div>
+            <button class="start-btn">Սկսել Խաղը</button>
+            
+            <div class="rules-popup" id="rulesPopup">
+                <div class="rules-content">
+                    "Ով է ուզում դառնալ Միլիոնատեր" <br><br>
+                    ✔️ Խաղը բաղկացած է 15 հարցից։<br>
+                    ✔️ Յուրաքանչյուր ճիշտ պատասխանի դեպքում խաղացողն անցնում է հաջորդ հարցին։<br>
+                    ✔️ Խաղում կա 2 անձեռնմխելի գումար 5-րդ և 10-րդ հարցերից հետո։<br>
+                    ✔️ Խաղացողը կարող է օգտվել՝ <em>«50/50»</em>, <em>«Դահլիճի օգնություն»</em>, <em>«Զանգ ընկերոջը»</em>, <em>«Հարցը փոխելու»</em> և <em>«ԱԲ-ի օգնություն»</em> հնարավորություններից։<br>
+                    ✔️ Սխալ պատասխանի դեպքում խաղացողը ստանում է վերջին շահած անձեռնմխելի գումարը։<br>
+                    ✔️ Խաղացողը կարող է ցանկացած պահի դադարեցնել խաղը և վերցնել շահած գումարը։<br><br>
+                    ՀԱՋՈՂՈՒԹՅՈՒՆ ՔԵԶ՝ ԱՊԱԳԱ ՄԻԼԻՈՆԱՏԵՐ։ 💰 
                 </div>
-                <button class="information" id="showRules">Կանոններ</button>
-                <div class="game-block">
-                    <h1>Ով է ուզում դառնալ Միլիոնատեր</h1>
-                    <div class="game-wrap">
-                        <div class="block-questions">
-                            <div class="question question_1 question-active">
-                                <h2>Նվագախմբի տարատեսակ</h2>
-                                <div class="block-answers">
-                                    <div class="answer">Ա. Դողային</div>
-                                    <div class="answer">Բ. Կողային</div>
-                                    <div class="answer">Գ. Փողային</div>
-                                    <div class="answer">Դ. Դողային</div>
-                                </div>
-                            </div>
+            </div>
 
-                            <div class="question question_extra" id="extra">
-                                <h2>Ըստ իր խոստովանության ինչի աստվածն էր Օլե Լուկոյեն Անդերսենի համանուն հեքիաթից</h2>
-                                <div class="block-answers">
-                                    <div class="answer">Ա. հեքիաթների</div>
-                                    <div class="answer">Բ. մանկության</div>
-                                    <div class="answer">Գ. գիշերվա</div>
-                                    <div class="answer">Դ. երազների</div>
-                                </div>
+            <button class="information" id="showRules">Կանոններ</button>
+
+            <div class="game-block">
+                <h1 class="game-title">Ով է ուզում դառնալ Միլիոնատեր</h1>
+                <div class="game-wrap">
+                    
+                    <div class="block-questions">
+                        
+                        <div class="question question_1 question-active">
+                            <h2>1. Ո՞րն է Շվեյցարիայի փաստացի մայրաքաղաքը (դաշնային քաղաքը).</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Ցյուրիխ</div>
+                                <div class="answer">Բ. Ժնև</div>
+                                <div class="answer answer-correct">Գ. Բեռն</div>
+                                <div class="answer">Դ. Բազել</div>
                             </div>
-                            <button class="end-btn" id="end">Դադարեցնել Խաղը</button>
                         </div>
-                        <div class="block-win">
-                            <div class="hints">
-                                <div class="hints-help fifty-fifty">
-                                    <span class="close-left"></span>
-                                    <span class="close-right"></span>
-                                    50/50
-                                </div>
 
-                                <div class="hints-help hall-help">
-                                    <span class="close-left"></span>
-                                    <span class="close-right"></span>
-                                    <i class="fas fa-users"></i>
-                                </div>
+                        <div class="question question_2">
+                            <h2>2. Ո՞ր քիմիական տարրն է կազմում Երկրի կեղևի զանգվածի ամենամեծ մասը.</h2>
+                            <div class="block-answers">
+                                <div class="answer answer-correct">Ա. Թթվածին</div>
+                                <div class="answer">Բ. Սիլիցիում</div>
+                                <div class="answer">Գ. Երկաթ</div>
+                                <div class="answer">Դ. Ալյումին</div>
+                            </div>
+                        </div>
 
-                                <div class="hints-help call-friend">
-                                    <span class="close-left"></span>
-                                    <span class="close-right"></span>
-                                    <i class="fas fa-phone"></i>
-                                </div>
+                        <div class="question question_3">
+                            <h2>3. Ո՞ր թվականին է կնքվել Նվարսակի պայմանագիրը.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. 451 թ.</div>
+                                <div class="answer answer-correct">Բ. 484 թ.</div>
+                                <div class="answer">Գ. 428 թ.</div>
+                                <div class="answer">Դ. 506 թ.</div>
+                            </div>
+                        </div>
 
-                            <div class="hints-help changed-question" id="hintBox">
+                        <div class="question question_4">
+                            <h2>4. Ո՞ր նկարիչն է հեղինակել «Աղջիկը մարգարտե ականջօղով» հայտնի կտավը.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Ռեմբրանդտ</div>
+                                <div class="answer">Բ. Ռաֆայել</div>
+                                <div class="answer answer-correct">Գ. Յան Վերմեեր</div>
+                                <div class="answer">Դ. Սանդրո Բոտիչելլի</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_5">
+                            <h2>5. Ո՞ր լեռն է համարվում Եվրոպայի ամենաբարձր գագաթը.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Մոնբլան</div>
+                                <div class="answer answer-correct">Բ. Էլբրուս</div>
+                                <div class="answer">Գ. Կազբեկ</div>
+                                <div class="answer">Դ. Օլիմպոս</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_6">
+                            <h2>6. Ո՞ր թվականին է հիմնադրվել Էրեբունի-Երևանը.</h2>
+                            <div class="block-answers">
+                                <div class="answer answer-correct">Ա. Մ.թ.ա. 782 թ.</div>
+                                <div class="answer">Բ. Մ.թ.ա. 685 թ.</div>
+                                <div class="answer">Գ. Մ.թ.ա. 882 թ.</div>
+                                <div class="answer">Դ. Մ.թ.ա. 753 թ.</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_7">
+                            <h2>7. Ո՞րն է մարդու մարմնի ամենափոքր ոսկրը.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Մուրճիկ</div>
+                                <div class="answer">Բ. Սալ</div>
+                                <div class="answer answer-correct">Գ. Ասպանդակ</div>
+                                <div class="answer">Դ. Մալուխ</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_8">
+                            <h2>8. Ո՞ր քաղաքում է գտնվում ՄԱԿ-ի Միջազգային դատարանը.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Նյու Յորք</div>
+                                <div class="answer">Բ. Ժնև</div>
+                                <div class="answer answer-correct">Գ. Հաագա</div>
+                                <div class="answer">Դ. Բրյուսել</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_9">
+                            <h2>9. Ո՞վ է գրել «Կոմս Մոնտե Քրիստո» վեպը.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Վիկտոր Հյուգո</div>
+                                <div class="answer answer-correct">Բ. Ալեքսանդր Դյումա</div>
+                                <div class="answer">Գ. Գյուստավ Ֆլոբեր</div>
+                                <div class="answer">Դ. Օնորե դը Բալզակ</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_10">
+                            <h2>10. Ո՞ր կայսրն է 380 թվականին քրիստոնեությունը հայտարարել Հռոմեական կայսրության պաշտոնական պետական կրոն.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Կոստանդիանոս Ա Մեծ</div>
+                                <div class="answer">Բ. Ներոն</div>
+                                <div class="answer answer-correct">Գ. Թեոդոսիոս Ա Մեծ</div>
+                                <div class="answer">Դ. Հադրիանոս</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_11">
+                            <h2>11. Ո՞րն է աշխարհի ամենափոքր թռչունը.</h2>
+                            <div class="block-answers">
+                                <div class="answer answer-correct">Ա. Մեղվա-կոլիբրի</div>
+                                <div class="answer">Բ. Կարմրաճակատ կտցար</div>
+                                <div class="answer">Գ. Ճնճղուկ</div>
+                                <div class="answer">Դ. Կորնեկ</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_12">
+                            <h2>12. Ո՞վ է հայերեն առաջին տպագիր գրքի («Ուրբաթագիրք», 1512 թ.) տպագրիչը.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Ոսկան Երևանցի</div>
+                                <div class="answer answer-correct">Բ. Հակոբ Մեղապարտ</div>
+                                <div class="answer">Գ. Աբգար Դպիր</div>
+                                <div class="answer">Դ. Խաչատուր Կեսարացի</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_13">
+                            <h2>13. Ո՞ր քիմիական տարրն է նշանակվում «W» տառով պարբերական համակարգում.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. Վանադիում</div>
+                                <div class="answer">Բ. Վիսմութ</div>
+                                <div class="answer answer-correct">Գ. Վոլֆրամ</div>
+                                <div class="answer">Դ. Վոլֆինիում</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_14">
+                            <h2>14. Ո՞ր կղզին է աշխարհում ամենամեծը ըստ տարածքի.</h2>
+                            <div class="block-answers">
+                                <div class="answer answer-correct">Ա. Գրենլանդիա</div>
+                                <div class="answer">Բ. Մադագասկար</div>
+                                <div class="answer">Գ. Կալիմանտան (Բորնեո)</div>
+                                <div class="answer">Դ. Նոր Գվինեա</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_15">
+                            <h2>15. Ո՞ր թվականին է տեղի ունեցել Մանազկերտի ճակատամարտը.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. 1054 թ.</div>
+                                <div class="answer answer-correct">Բ. 1071 թ.</div>
+                                <div class="answer">Գ. 1099 թ.</div>
+                                <div class="answer">Դ. 1204 թ.</div>
+                            </div>
+                        </div>
+
+                        <div class="question question_extra" id="extra">
+                            <h2>Ըստ իր խոստովանության՝ ինչի՞ աստվածն էր Օլե Լուկոյեն Անդերսենի համանուն հեքիաթից.</h2>
+                            <div class="block-answers">
+                                <div class="answer">Ա. հեքիաթների</div>
+                                <div class="answer">Բ. մանկության</div>
+                                <div class="answer">Գ. գիշերվա</div>
+                                <div class="answer answer-correct">Դ. երազների</div>
+                            </div>
+                        </div>
+
+                        <button class="end-btn" id="end">Դադարեցնել Խաղը</button>
+                    </div>
+
+                    <div class="block-win">
+                        <div class="hints">
+                            <div class="hints-help fifty-fifty" title="50/50">
+                                <span class="close-left"></span>
+                                <span class="close-right"></span>
+                                50/50
+                            </div>
+
+                            <div class="hints-help hall-help" title="Դահլիճի օգնություն">
+                                <span class="close-left"></span>
+                                <span class="close-right"></span>
+                                <i class="fas fa-users"></i>
+                            </div>
+
+                            <div class="hints-help call-friend" title="Զանգ ընկերոջը">
+                                <span class="close-left"></span>
+                                <span class="close-right"></span>
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div class="hints-help changed-question" id="hintBox" title="Փոխել հարցը">
                                 <span class="close-left"></span>
                                 <span class="close-right"></span>
                                 <i class="fas fa-retweet"></i>
                             </div>
 
-                            <div class="hints-help ai-help">
+                            <div class="hints-help ai-help" title="ԱԲ օգնություն">
                                 <span class="close-left"></span>
                                 <span class="close-right"></span>
                                 AI
                             </div>
+                        </div>
 
-                            
-
-
+                        <div class="wins">
+                            <div class="wins-block"><span>15.</span> 5 000 000</div>
+                            <div class="wins-block"><span>14.</span> 3 000 000</div>
+                            <div class="wins-block"><span>13.</span> 2 000 000</div>
+                            <div class="wins-block"><span>12.</span> 1 000 000</div>
+                            <div class="wins-block"><span>11.</span> 500 000</div>
+                            <div class="wins-block milestone"><span>10.</span> 250 000</div>
+                            <div class="wins-block"><span>9.</span> 125 000</div>
+                            <div class="wins-block"><span>8.</span> 64 000</div>
+                            <div class="wins-block"><span>7.</span> 32 000</div>
+                            <div class="wins-block"><span>6.</span> 16 000</div>
+                            <div class="wins-block milestone"><span>5.</span> 8 000</div>
+                            <div class="wins-block"><span>4.</span> 4 000</div>
+                            <div class="wins-block"><span>3.</span> 2 000</div>
+                            <div class="wins-block"><span>2.</span> 1 000</div>
+                            <div class="wins-block"><span>1.</span> 500</div>
                         </div>
                     </div>
-                    <div class="wins">
-                        <div class="wins-block"><span>15.</span> 5 000 000</div>
-                        <div class="wins-block"><span>14.</span> 3 000 000</div>
-                        <div class="wins-block"><span>13.</span> 2 000 000</div>
-                        <div class="wins-block"><span>12.</span> 1 000 000</div>
-                        <div class="wins-block"><span>11.</span> 500 000</div>
-                        <div class="wins-block"><span>10.</span> 250 000</div>
-                        <div class="wins-block"><span>9.</span> 125 000</div>
-                        <div class="wins-block"><span>8.</span> 64 000</div>
-                        <div class="wins-block"><span>7.</span> 32 000</div>
-                        <div class="wins-block"><span>6.</span> 16 000</div>
-                        <div class="wins-block"><span>5.</span> 8 000</div>
-                        <div class="wins-block"><span>4.</span> 4 000</div>
-                        <div class="wins-block"><span>3.</span> 2 000</div>
-                        <div class="wins-block"><span>2.</span> 1 000</div>
-                        <div class="wins-block"><span>1.</span> 500</div>
-                    </div>
-                    <div class="ai-explain-block" id="aiExplainBlock">
-                        <span class="ai-explain-close" id="aiExplainClose">&times;</span>
-                        <h3>ԱԲ - ի պատասխան</h3>
-                        <p class="ai-explain-text" id="aiExplainText"></p>
-                    </div>
+
                 </div>
+
+                <div class="ai-explain-block" id="aiExplainBlock">
+                    <span class="ai-explain-close" id="aiExplainClose">&times;</span>
+                    <h3>ԱԲ - ի պատասխան</h3>
+                    <p class="ai-explain-text" id="aiExplainText"></p>
+                </div>
+            </div>
         </div>
     </section>
 
     <script src="js/script.js"></script>
-
 </body>
 </html>
